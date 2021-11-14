@@ -276,7 +276,7 @@ body{
 
 
 
-    max-width:0.8rem;
+    max-width:0.8rem !important;
     color:#333;
 }
 
@@ -286,9 +286,9 @@ body{
 
 
 
-    max-width:1.5rem;
+    max-width:1.5rem !important;
     color:#333333;
-    margin-right: 0.5rem;
+    margin-right: 0.5rem ;
 }
 
 
@@ -297,7 +297,7 @@ body{
 
 
 
-    max-width:1.3rem;
+    max-width:1.3rem !important;
    margin-left: 0.1rem;
     margin-right: 0.3rem;
 }
@@ -308,7 +308,7 @@ body{
 
 
 
-    max-width:1.5rem;
+    max-width:1.5rem !important;
    margin-left: 0.1rem;
     margin-right: 0.3rem;
 }
@@ -327,25 +327,6 @@ body{
 
 
 
-
-@media only screen and (min-width: 300px) {
-
- .calavera {font-size: 8vh !important;} 
-
-}
-
-@media only screen and (min-width: 640px) {
-
- .titular {font-size: 8vh !important;} 
-
-}
-
-
-@media only screen and (min-width: 768px) {
-
- .titular {font-size: 10vh  !important;}
-
-}
 
 @media only screen and (min-width: 992px) {
 
