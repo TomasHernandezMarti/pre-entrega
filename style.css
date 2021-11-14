@@ -25,9 +25,17 @@ h1 span:first-child{
     font-weight: 600;
 }
 
+
+
+
 a{
-    color: #0645AD;
+    color: rgba(255,255,255,0.8)!IMPORTANT;
     text-decoration: none;
+}
+
+
+a:hover {
+    color: WHITE !IMPORTANT;
 }
 
 ul{
@@ -43,10 +51,16 @@ body{
 
 
 
+.nav-link {
+    color:rgba(255,255,255,0.8) !IMPORTANT;
+}
 
-
-
-
+  #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+            color: WHITE !IMPORTANT;
+        }
+        #mainNav .navbar-nav .nav-item .nav-link.active {
+            color: WHITE !important;
+        }
 
 
 
@@ -266,3 +280,8 @@ body{
  
  
 
+
+
+#EXPLAB .LEAD{
+    font-weight: 500 !IMPORTANT;
+}
