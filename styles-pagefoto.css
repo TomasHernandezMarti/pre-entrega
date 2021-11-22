@@ -1,0 +1,474 @@
+
+
+
+@charset "UTF-8";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+      --bs-body-font-family: 'Epilogue', sans-serif;}
+
+
+html, body{
+    min-height: 100%;
+
+font-family: 'Epilogue', sans-serif;}
+
+
+
+
+
+
+h1 span:first-child{
+    font-weight: 600;
+}
+
+
+
+
+a{
+    color: rgba(255,255,255,0.8)!IMPORTANT;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: WHITE !IMPORTANT;
+}
+
+ul{
+    list-style: none ;
+}
+
+body{
+    background-color: azure;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.navbar-toggler-icon {
+  background-image: url("Iconos/menu-burger.svg") 
+  ; width: 30px; height: 30px;
+  color:white;
+}
+
+
+
+
+
+.nav-link {
+    color:rgba(255,255,255,0.8) !IMPORTANT;
+}
+
+  #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+            color: WHITE !IMPORTANT;
+        }
+        #mainNav .navbar-nav .nav-item .nav-link.active {
+            color: WHITE !important;
+        }
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 300px) {
+
+ .titular {
+
+    font-size: 6vh !important;} 
+
+}
+
+@media only screen and (min-width: 640px) {
+
+ .titular {font-size: 8vh !important;} 
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+ .titular {font-size: 10vh  !important;}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+ #landing 
+ .titular {font-size: 10vh !important;}
+
+
+}
+
+
+
+
+
+.owl-item{
+    float: left;
+    padding-right:1rem !important;
+  max-width: max-content;
+  max-height: max-content;
+}
+
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* display none until init */
+.owl-carousel{
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+    
+.owl-carousel .owl-item{
+    float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+    cursor: pointer;
+}
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
+
+/*
+*   Owl Carousel Owl Demo Theme 
+*   v1.3.3
+*/
+
+.owl-theme .owl-controls{
+    margin-top: 10px;
+    text-align:center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+    color: #FFF;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background: none;
+    filter: Alpha(Opacity=50);/*IE7 fix*/
+    opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+    filter: Alpha(Opacity=100);/*IE7 fix*/
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 3px;
+    filter: Alpha(Opacity=50);/*IE7 fix*/
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    filter: Alpha(Opacity=100);/*IE7 fix*/
+    opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+    height: auto;
+    width: auto;
+    color: #FFF;
+    padding: 2px 8px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+    min-height: 150px;
+    background: url(AjaxLoader.gif) no-repeat center center
+}
+ 
+ 
+
+
+
+
+
+
+.cuadrado {
+
+
+
+    max-width:0.8rem !important;
+    color:#333;
+}
+
+
+
+.cuadrado-educacion {
+
+
+
+    max-width:1.5rem !important;
+    color:#333333;
+    margin-right: 0.5rem ;
+}
+
+
+
+.cuadrado-trabajo {
+
+
+
+    max-width:1.3rem !important;
+   margin-left: 0.1rem;
+    margin-right: 0.3rem;
+}
+
+
+
+.cuadrado-habilidades {
+
+
+
+    max-width:1.5rem !important;
+   margin-left: 0.1rem;
+    margin-right: 0.3rem;
+}
+
+
+
+
+
+.chiquito{
+
+    font-size: 0.9rem !important;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+
+
+ .calavera {margin-left: 5vw}
+
+
+}
+
+
+
+
+.row {
+  display: -ms-flexbox !important; /* IE10 */
+  display: flex !important;
+  -ms-flex-wrap: wrap !important; /* IE10 */
+  flex-wrap: wrap !important;
+  padding: 0 4px !important;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25% !important; /* IE10 */
+  flex: 25% !important;
+  max-width: 25% !important;
+  padding: 0 4px !important;
+}
+
+.column img {
+  margin-top: 8px !important;
+  vertical-align: middle !important;
+  width: 100% !important;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50% !important;
+    flex: 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100% !important;
+    flex: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 20%;
+  max-width: auto;
+  
+  
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 8vh;
+  right: 15vw;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 90%;
+ 
+  }
+}
